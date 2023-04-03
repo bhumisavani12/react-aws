@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import {
+    Button
+  } from "@aws-amplify/ui-react";
 
 class Header extends Component {
+    
     render() {
         return (
             <div>
@@ -37,6 +41,7 @@ class Header extends Component {
                         <form className="form-inline my-2 my-lg-0">
                             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <Button onClick={this.props.signOut}>Sign Out</Button>
                         </form>
                     </div>
                     </div>
